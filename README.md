@@ -1,0 +1,1 @@
+### End goal as of now is to build an ai that can traverse through the list of radio stations and start and stop radios according to the voice command
