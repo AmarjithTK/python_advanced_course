@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a4d02d20ce8e4b138b0840cc3d116b38 {
+                #map_aae9606e084749708775228aee4d87ab {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_a4d02d20ce8e4b138b0840cc3d116b38" ></div>
+            <div class="folium-map" id="map_aae9606e084749708775228aee4d87ab" ></div>
         
 </body>
 <script>    
     
-            var map_a4d02d20ce8e4b138b0840cc3d116b38 = L.map(
-                "map_a4d02d20ce8e4b138b0840cc3d116b38",
+            var map_aae9606e084749708775228aee4d87ab = L.map(
+                "map_aae9606e084749708775228aee4d87ab",
                 {
-                    center: [-50.04, -140.06],
+                    center: [50.3, 30.22],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
                     zoomControl: true,
@@ -55,9 +55,28 @@
 
         
     
-            var tile_layer_c5d7b5a50563476aa8d145616cbb3823 = L.tileLayer(
+            var tile_layer_99a6a4e7fdfe4106a8e4bef0853ef8e9 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_a4d02d20ce8e4b138b0840cc3d116b38);
+            ).addTo(map_aae9606e084749708775228aee4d87ab);
         
+    
+            var marker_ac95671c4ae94256aa88616524cdc0fb = L.marker(
+                [50.3, 30.22],
+                {}
+            ).addTo(map_aae9606e084749708775228aee4d87ab);
+        
+    
+        var popup_b35b286079d9497789ccf00d7d3fca7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea71c5bc4674497aa05e9c6e192291b9 = $(`<div id="html_ea71c5bc4674497aa05e9c6e192291b9" style="width: 100.0%; height: 100.0%;">[('2021-08-27 15:00:00', 73.06, 'scattered clouds', '03d'), ('2021-08-27 18:00:00', 65.61, 'few clouds', '02n'), ('2021-08-27 21:00:00', 58.15, 'overcast clouds', '04n'), ('2021-08-28 00:00:00', 57.47, 'overcast clouds', '04n')]</div>`)[0];
+            popup_b35b286079d9497789ccf00d7d3fca7d.setContent(html_ea71c5bc4674497aa05e9c6e192291b9);
+        
+
+        marker_ac95671c4ae94256aa88616524cdc0fb.bindPopup(popup_b35b286079d9497789ccf00d7d3fca7d)
+        ;
+
+        
+    
 </script>

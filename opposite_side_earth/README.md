@@ -111,22 +111,46 @@
     Attributes - those which are accesible from  '.' method
 
 
+
+####  inheritance
+
+    Inheritance helps us to obtains methods of the parent class to a 'derived class'
+
+    class class_name(parent_class):
+        def __init__(self,parameters):
+            super().__init__(arguments)     
+
+    
+    add_to method - This method adds the self to the parent object
+
+        ' element_self.add_to(parent_object) '        
+
+
 ### Some dumb doubts
 
     why can't we use functions instead of using classes, Function can be modified for any requirement right ?
 
     Can you do a method on a function - I mean function on top of function but only when we need it
 
-
     what is the difference between a class and an object ?
 
     An instance of class definition is known as object 
 
-
-
     Class methods versus instance methods ?
 
     class methods require no initialisation at all . But instance methods require object to be created from class blueprint
+
+
+    how to access class variables from instance methods
+
+    class Geopoint:
+        scale = '50.75'
+        width = '55'
+
+
+        def meter(self):
+            print(Geopoint.scale)
+            print(Geopoint.width)
 
     
 

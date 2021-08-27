@@ -1,4 +1,4 @@
-# ***** Low - Level working of python demonstrating program
+#  ================ Low - Level working of python demonstrating program ============
 
 from folium import Map
   
@@ -14,20 +14,30 @@ longitude=float("39.94")
 
 antipode_latitude = latitude.__mul__(int("-1"))
 
+
+
 if longitude.__lt__(float("0")):
     antipode_longitude = longitude.__add__(float('180'))
+
+
 elif longitude.__eq__(float("0")):
 # location is the reference point    
     antipode_longitude = float('180')
+
+
 elif longitude.__gt__(float("180")) or longitude.__lt__(float("-180")):
 
 # longitude is more than what it should be
-    antipode_longitude = str('invalid longitude detected')        
+    antipode_longitude = str('invalid longitude detected')    
+
+
+
 else:
     antipode_longitude = longitude.__sub__(float('180'))
 
 
 maplist = list((antipode_latitude, antipode_longitude)) # creates a list with two variables
+
 
 
 myMap = Map(maplist)

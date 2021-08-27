@@ -1,5 +1,7 @@
-
+# ================== Using maps library of folium package ==================
   
+
+from folium import Map       
  
 latitude=50.04
 longitude=39.94
