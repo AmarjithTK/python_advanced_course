@@ -66,6 +66,7 @@ class Geopoint:
 
 india = Geopoint(latitude = '50.03', longitude = '43.33')
 print(india.get_weather())
+print(Geopoint.random().get_weather())
 
 
 

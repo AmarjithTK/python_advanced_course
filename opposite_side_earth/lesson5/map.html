@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aceddee5c494494aa58fb60fcae7003b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_aceddee5c494494aa58fb60fcae7003b" ></div>
+        
+</body>
+<script>    
+    
+            var map_aceddee5c494494aa58fb60fcae7003b = L.map(
+                "map_aceddee5c494494aa58fb60fcae7003b",
+                {
+                    center: [55.0, 44.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2431a347644547fe805eb454f6ce4a50 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+            var marker_5d25a7ce26b145409e145383a4e72272 = L.marker(
+                [84.7946366686933, 32.45610386328349],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_07dd344b2edd4ce0921e9b1a9b4bdec2 = L.popup({"maxWidth": 500});
+
+        
+            var html_5429293aa39e4f35b9f59e375239ff02 = $(`<div id="html_5429293aa39e4f35b9f59e375239ff02" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -33 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -34 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -35 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -35 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_07dd344b2edd4ce0921e9b1a9b4bdec2.setContent(html_5429293aa39e4f35b9f59e375239ff02);
+        
+
+        marker_5d25a7ce26b145409e145383a4e72272.bindPopup(popup_07dd344b2edd4ce0921e9b1a9b4bdec2)
+        ;
+
+        
+    
+    
+            var marker_b7a447e3f68e45beae9c512ac3a30d06 = L.marker(
+                [48.907768359501034, 68.11550528769283],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_f9e81d5b5eca4a72bdebdbd28a279cc2 = L.popup({"maxWidth": 500});
+
+        
+            var html_e4916bfaaaa94cbd88e543b5317c40bb = $(`<div id="html_e4916bfaaaa94cbd88e543b5317c40bb" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -3 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 -5 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -8 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -9 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_f9e81d5b5eca4a72bdebdbd28a279cc2.setContent(html_e4916bfaaaa94cbd88e543b5317c40bb);
+        
+
+        marker_b7a447e3f68e45beae9c512ac3a30d06.bindPopup(popup_f9e81d5b5eca4a72bdebdbd28a279cc2)
+        ;
+
+        
+    
+    
+            var marker_14fb13c3477c4627a3db3fe5a5ef4458 = L.marker(
+                [43.37886541741105, -158.18769584918806],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_ee9398653ac347918680307db8244491 = L.popup({"maxWidth": 500});
+
+        
+            var html_b9ff1378fbaf4ee495f0d14d58c5b020 = $(`<div id="html_b9ff1378fbaf4ee495f0d14d58c5b020" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 0 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 -2 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 -4 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_ee9398653ac347918680307db8244491.setContent(html_b9ff1378fbaf4ee495f0d14d58c5b020);
+        
+
+        marker_14fb13c3477c4627a3db3fe5a5ef4458.bindPopup(popup_ee9398653ac347918680307db8244491)
+        ;
+
+        
+    
+    
+            var marker_07449f67a9414204b2851dacde3f277b = L.marker(
+                [10.625490071199508, 6.557266307758795],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_f875410dc4554df0b7a10c42f0c7ccda = L.popup({"maxWidth": 500});
+
+        
+            var html_4379b3a609b1495780e2d1ef877eafcf = $(`<div id="html_4379b3a609b1495780e2d1ef877eafcf" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 14 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 9 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 8 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_f875410dc4554df0b7a10c42f0c7ccda.setContent(html_4379b3a609b1495780e2d1ef877eafcf);
+        
+
+        marker_07449f67a9414204b2851dacde3f277b.bindPopup(popup_f875410dc4554df0b7a10c42f0c7ccda)
+        ;
+
+        
+    
+    
+            var marker_ca7cdd0213f14087aade286535b436ac = L.marker(
+                [15.084809340047514, -86.9638453153548],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_ee592edd4a0f4e5087e69b3501686e6b = L.popup({"maxWidth": 500});
+
+        
+            var html_80ae4194cacf4ceb9162e9f43b379d0c = $(`<div id="html_80ae4194cacf4ceb9162e9f43b379d0c" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 2 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 5 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 9 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 8 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_ee592edd4a0f4e5087e69b3501686e6b.setContent(html_80ae4194cacf4ceb9162e9f43b379d0c);
+        
+
+        marker_ca7cdd0213f14087aade286535b436ac.bindPopup(popup_ee592edd4a0f4e5087e69b3501686e6b)
+        ;
+
+        
+    
+    
+            var marker_5f0bc5f798a842f39c687bf5e4f51ef8 = L.marker(
+                [-24.22621202310249, 44.105953225541754],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_fc19cb5adff74817b3b90a80ba402b27 = L.popup({"maxWidth": 500});
+
+        
+            var html_a288026989e24556b473b0cb27b2a31e = $(`<div id="html_a288026989e24556b473b0cb27b2a31e" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 18 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 13 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 4 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 3 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_fc19cb5adff74817b3b90a80ba402b27.setContent(html_a288026989e24556b473b0cb27b2a31e);
+        
+
+        marker_5f0bc5f798a842f39c687bf5e4f51ef8.bindPopup(popup_fc19cb5adff74817b3b90a80ba402b27)
+        ;
+
+        
+    
+    
+            var marker_359c88dfe20a4ce99d5884759af030fc = L.marker(
+                [45.113138691936, -82.65204145340553],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_6972379dbbda419983e07129d3689728 = L.popup({"maxWidth": 500});
+
+        
+            var html_473387342ab949cfa60573ef2079c004 = $(`<div id="html_473387342ab949cfa60573ef2079c004" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -11 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 -9 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 -6 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 -6 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_6972379dbbda419983e07129d3689728.setContent(html_473387342ab949cfa60573ef2079c004);
+        
+
+        marker_359c88dfe20a4ce99d5884759af030fc.bindPopup(popup_6972379dbbda419983e07129d3689728)
+        ;
+
+        
+    
+    
+            var marker_0a98704bb557476788f8553163bf06ab = L.marker(
+                [-36.49875380269824, 124.05441000801568],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_5ad9754b57d3403196c5e5ea0ac368bd = L.popup({"maxWidth": 500});
+
+        
+            var html_9a04a5d4dee34efaa6e279db76f9b175 = $(`<div id="html_9a04a5d4dee34efaa6e279db76f9b175" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -1 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 -1 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -1 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -1 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_5ad9754b57d3403196c5e5ea0ac368bd.setContent(html_9a04a5d4dee34efaa6e279db76f9b175);
+        
+
+        marker_0a98704bb557476788f8553163bf06ab.bindPopup(popup_5ad9754b57d3403196c5e5ea0ac368bd)
+        ;
+
+        
+    
+    
+            var marker_fdd25d3f9d7f4e6295d53b2dffa13dd4 = L.marker(
+                [-76.57661167000478, -1.5829058278894195],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_93b7fee2fbad4ad380d497ecb104f14b = L.popup({"maxWidth": 500});
+
+        
+            var html_48b9719ed6dd4ccb8deb9a6e5ecb7edb = $(`<div id="html_48b9719ed6dd4ccb8deb9a6e5ecb7edb" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -52 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -52 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -55 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -60 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_93b7fee2fbad4ad380d497ecb104f14b.setContent(html_48b9719ed6dd4ccb8deb9a6e5ecb7edb);
+        
+
+        marker_fdd25d3f9d7f4e6295d53b2dffa13dd4.bindPopup(popup_93b7fee2fbad4ad380d497ecb104f14b)
+        ;
+
+        
+    
+    
+            var marker_e364d25e4ef74045bbb27975b531f854 = L.marker(
+                [37.8211573417133, -107.7573885662347],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_98e835c86d464c1cb07e444824b8dce8 = L.popup({"maxWidth": 500});
+
+        
+            var html_b7a81fa27ce14664897202826140a1e1 = $(`<div id="html_b7a81fa27ce14664897202826140a1e1" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -17 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 -16 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 -10 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -11 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_98e835c86d464c1cb07e444824b8dce8.setContent(html_b7a81fa27ce14664897202826140a1e1);
+        
+
+        marker_e364d25e4ef74045bbb27975b531f854.bindPopup(popup_98e835c86d464c1cb07e444824b8dce8)
+        ;
+
+        
+    
+    
+            var marker_ad33c77a02304fbaa14b495376b25458 = L.marker(
+                [15.18305829695953, 87.72174502993408],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_e3f78a7898cc403d9ddc31a1bf9dea94 = L.popup({"maxWidth": 500});
+
+        
+            var html_51b4aa613ac94f3fb44da717f9c5ca72 = $(`<div id="html_51b4aa613ac94f3fb44da717f9c5ca72" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 15 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 14 - Temp 	 moderate rain - Weather <hr width = 5>18:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 14 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_e3f78a7898cc403d9ddc31a1bf9dea94.setContent(html_51b4aa613ac94f3fb44da717f9c5ca72);
+        
+
+        marker_ad33c77a02304fbaa14b495376b25458.bindPopup(popup_e3f78a7898cc403d9ddc31a1bf9dea94)
+        ;
+
+        
+    
+    
+            var marker_7740c193546b4eee959524bd4cfbbcb5 = L.marker(
+                [7.088281139453343, 68.42023087397712],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_ec8a745b6f4a46ffb7044434ae4e7770 = L.popup({"maxWidth": 500});
+
+        
+            var html_ec98ca7c459a4da28c5afd6732ef47e1 = $(`<div id="html_ec98ca7c459a4da28c5afd6732ef47e1" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 13 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 13 - Temp 	 moderate rain - Weather <hr width = 5></div>`)[0];
+            popup_ec8a745b6f4a46ffb7044434ae4e7770.setContent(html_ec98ca7c459a4da28c5afd6732ef47e1);
+        
+
+        marker_7740c193546b4eee959524bd4cfbbcb5.bindPopup(popup_ec8a745b6f4a46ffb7044434ae4e7770)
+        ;
+
+        
+    
+    
+            var marker_b291dd368fff403c9ee4f9dc2fed74e5 = L.marker(
+                [-18.757000923596294, 177.00285300235237],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_d89c296536e7480aa65c8e28011e51f1 = L.popup({"maxWidth": 500});
+
+        
+            var html_507952de1af141769fc2e5f110a152f8 = $(`<div id="html_507952de1af141769fc2e5f110a152f8" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 11 - Temp 	 scattered clouds - Weather <hr width = 5>15:00:00 - Time 	 11 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 11 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 11 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_d89c296536e7480aa65c8e28011e51f1.setContent(html_507952de1af141769fc2e5f110a152f8);
+        
+
+        marker_b291dd368fff403c9ee4f9dc2fed74e5.bindPopup(popup_d89c296536e7480aa65c8e28011e51f1)
+        ;
+
+        
+    
+    
+            var marker_11a4ce6ac8c94fc48c0ac2afd41f5bb3 = L.marker(
+                [-40.93050616386662, -173.998234301864],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_3a51e4253c654beb868ac3a1d304932a = L.popup({"maxWidth": 500});
+
+        
+            var html_7ea00fc000524f1ea723be8c5a2f2c8b = $(`<div id="html_7ea00fc000524f1ea723be8c5a2f2c8b" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -3 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -3 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 -3 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 -3 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_3a51e4253c654beb868ac3a1d304932a.setContent(html_7ea00fc000524f1ea723be8c5a2f2c8b);
+        
+
+        marker_11a4ce6ac8c94fc48c0ac2afd41f5bb3.bindPopup(popup_3a51e4253c654beb868ac3a1d304932a)
+        ;
+
+        
+    
+    
+            var marker_c7f52c320dc04f1097cf497c17bae799 = L.marker(
+                [50.440654994204294, 107.15969750789714],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_bec5963d59aa494bbdabd7130e68ca00 = L.popup({"maxWidth": 500});
+
+        
+            var html_d1d5030445554dc983dce82b3e5ee159 = $(`<div id="html_d1d5030445554dc983dce82b3e5ee159" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -10 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 -12 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -15 - Temp 	 few clouds - Weather <hr width = 5>21:00:00 - Time 	 -15 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_bec5963d59aa494bbdabd7130e68ca00.setContent(html_d1d5030445554dc983dce82b3e5ee159);
+        
+
+        marker_c7f52c320dc04f1097cf497c17bae799.bindPopup(popup_bec5963d59aa494bbdabd7130e68ca00)
+        ;
+
+        
+    
+    
+            var marker_63f52517d75341099301d5ec2c86ab62 = L.marker(
+                [-76.13971714188241, 82.76699674965846],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_060a66b298184fb4a963517b7279c2b9 = L.popup({"maxWidth": 500});
+
+        
+            var html_f318a86cb9e0427d92d3cd640bf5da62 = $(`<div id="html_f318a86cb9e0427d92d3cd640bf5da62" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -42 - Temp 	 light snow - Weather <hr width = 5>15:00:00 - Time 	 -44 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -47 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -51 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_060a66b298184fb4a963517b7279c2b9.setContent(html_f318a86cb9e0427d92d3cd640bf5da62);
+        
+
+        marker_63f52517d75341099301d5ec2c86ab62.bindPopup(popup_060a66b298184fb4a963517b7279c2b9)
+        ;
+
+        
+    
+    
+            var marker_d66a3d0b16b0425886109dfc91c90349 = L.marker(
+                [-37.41610412475977, 87.1509094971288],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_077acf39e1a5434687fbe642e104186b = L.popup({"maxWidth": 500});
+
+        
+            var html_bb18406f3d214339ad4b19c662578fec = $(`<div id="html_bb18406f3d214339ad4b19c662578fec" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -4 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -4 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -4 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_077acf39e1a5434687fbe642e104186b.setContent(html_bb18406f3d214339ad4b19c662578fec);
+        
+
+        marker_d66a3d0b16b0425886109dfc91c90349.bindPopup(popup_077acf39e1a5434687fbe642e104186b)
+        ;
+
+        
+    
+    
+            var marker_eb489b8ff03e438eb159e1f1fb5347a0 = L.marker(
+                [39.85175212870513, 99.95043404744638],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_29d0e6d567df41ef80ec0955b5dde436 = L.popup({"maxWidth": 500});
+
+        
+            var html_12d676bdd29c4ea9aead03742f319d2b = $(`<div id="html_12d676bdd29c4ea9aead03742f319d2b" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -1 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 -3 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -7 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 -7 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_29d0e6d567df41ef80ec0955b5dde436.setContent(html_12d676bdd29c4ea9aead03742f319d2b);
+        
+
+        marker_eb489b8ff03e438eb159e1f1fb5347a0.bindPopup(popup_29d0e6d567df41ef80ec0955b5dde436)
+        ;
+
+        
+    
+    
+            var marker_0939708e193a4a42a82fc5e97aa1fa8a = L.marker(
+                [-31.605594687367308, 102.96028094640485],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_b6feb0213e2e434bbb34e456d76e0191 = L.popup({"maxWidth": 500});
+
+        
+            var html_4c6cc765f8c14b72ba69167f76739b63 = $(`<div id="html_4c6cc765f8c14b72ba69167f76739b63" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 2 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 2 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 2 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 0 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_b6feb0213e2e434bbb34e456d76e0191.setContent(html_4c6cc765f8c14b72ba69167f76739b63);
+        
+
+        marker_0939708e193a4a42a82fc5e97aa1fa8a.bindPopup(popup_b6feb0213e2e434bbb34e456d76e0191)
+        ;
+
+        
+    
+    
+            var marker_60ad8a13ad4e4737a10c07cd3feb61b9 = L.marker(
+                [-11.179915516676857, 165.57687455557692],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_dd14863b754e41b196ba8d8c2fd91f7a = L.popup({"maxWidth": 500});
+
+        
+            var html_13138e177a7643779ac31ee96adf64b5 = $(`<div id="html_13138e177a7643779ac31ee96adf64b5" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 14 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_dd14863b754e41b196ba8d8c2fd91f7a.setContent(html_13138e177a7643779ac31ee96adf64b5);
+        
+
+        marker_60ad8a13ad4e4737a10c07cd3feb61b9.bindPopup(popup_dd14863b754e41b196ba8d8c2fd91f7a)
+        ;
+
+        
+    
+    
+            var marker_af215f1406914076be132af9a723aa87 = L.marker(
+                [44.374709716056714, -54.41059763141533],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_5cbaca6f95964b9782e49a6e30991d07 = L.popup({"maxWidth": 500});
+
+        
+            var html_6ed1587cb923402c97e98023f8bc1341 = $(`<div id="html_6ed1587cb923402c97e98023f8bc1341" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 1 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 1 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 1 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 0 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_5cbaca6f95964b9782e49a6e30991d07.setContent(html_6ed1587cb923402c97e98023f8bc1341);
+        
+
+        marker_af215f1406914076be132af9a723aa87.bindPopup(popup_5cbaca6f95964b9782e49a6e30991d07)
+        ;
+
+        
+    
+    
+            var marker_d95246a4cfcf4e579b51de7ac994e9f9 = L.marker(
+                [-57.15153952587103, 179.5967370589787],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_0587616208694d42acb34d77b51a89bf = L.popup({"maxWidth": 500});
+
+        
+            var html_272384050c234f09830573a7fc19f84b = $(`<div id="html_272384050c234f09830573a7fc19f84b" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -9 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -9 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -9 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 -9 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_0587616208694d42acb34d77b51a89bf.setContent(html_272384050c234f09830573a7fc19f84b);
+        
+
+        marker_d95246a4cfcf4e579b51de7ac994e9f9.bindPopup(popup_0587616208694d42acb34d77b51a89bf)
+        ;
+
+        
+    
+    
+            var marker_050aeb0c01e94fcc8941845592bfb741 = L.marker(
+                [60.61375617843012, -143.81461928084542],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_3196c60320e84665bb4987b5b84ceb59 = L.popup({"maxWidth": 500});
+
+        
+            var html_8bfd1fb6ed514bb0b5655b0f43907a49 = $(`<div id="html_8bfd1fb6ed514bb0b5655b0f43907a49" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -18 - Temp 	 light snow - Weather <hr width = 5>15:00:00 - Time 	 -18 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -18 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -17 - Temp 	 light snow - Weather <hr width = 5></div>`)[0];
+            popup_3196c60320e84665bb4987b5b84ceb59.setContent(html_8bfd1fb6ed514bb0b5655b0f43907a49);
+        
+
+        marker_050aeb0c01e94fcc8941845592bfb741.bindPopup(popup_3196c60320e84665bb4987b5b84ceb59)
+        ;
+
+        
+    
+    
+            var marker_d742deb2de2243d0b28e61e0c3f14967 = L.marker(
+                [-16.612453425804134, 60.29004764437201],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_35c5606aa3eb4b0fb8f0ff2332bd346a = L.popup({"maxWidth": 500});
+
+        
+            var html_b58f46f2efec418cb93c4f7a3ad8f4d5 = $(`<div id="html_b58f46f2efec418cb93c4f7a3ad8f4d5" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 10 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 10 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 10 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 10 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_35c5606aa3eb4b0fb8f0ff2332bd346a.setContent(html_b58f46f2efec418cb93c4f7a3ad8f4d5);
+        
+
+        marker_d742deb2de2243d0b28e61e0c3f14967.bindPopup(popup_35c5606aa3eb4b0fb8f0ff2332bd346a)
+        ;
+
+        
+    
+    
+            var marker_50c0256d1993447e86b62bdadc075149 = L.marker(
+                [9.573258871867367, -131.785640133586],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_9f2fbaeeb9274fdab86bd0c6f8f97221 = L.popup({"maxWidth": 500});
+
+        
+            var html_cb544d24fd1a4fd5ab6014ca6fe8db06 = $(`<div id="html_cb544d24fd1a4fd5ab6014ca6fe8db06" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_9f2fbaeeb9274fdab86bd0c6f8f97221.setContent(html_cb544d24fd1a4fd5ab6014ca6fe8db06);
+        
+
+        marker_50c0256d1993447e86b62bdadc075149.bindPopup(popup_9f2fbaeeb9274fdab86bd0c6f8f97221)
+        ;
+
+        
+    
+    
+            var marker_f5a154ef75cb48d98db654dea5d854cf = L.marker(
+                [-35.354762321781216, -37.58895778009321],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_5604f63ae51a41478caf32a79b44717d = L.popup({"maxWidth": 500});
+
+        
+            var html_dceea81027494e1581764949f1835b20 = $(`<div id="html_dceea81027494e1581764949f1835b20" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 2 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 2 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 2 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 2 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_5604f63ae51a41478caf32a79b44717d.setContent(html_dceea81027494e1581764949f1835b20);
+        
+
+        marker_f5a154ef75cb48d98db654dea5d854cf.bindPopup(popup_5604f63ae51a41478caf32a79b44717d)
+        ;
+
+        
+    
+    
+            var marker_8ed729ebac324de0910685b2eb736401 = L.marker(
+                [9.670765373297499, -52.25346301330413],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_411a97f0b4b84bf7b5c40dfa412ac079 = L.popup({"maxWidth": 500});
+
+        
+            var html_281db548098b4a658f27d61b32e98a49 = $(`<div id="html_281db548098b4a658f27d61b32e98a49" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 13 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_411a97f0b4b84bf7b5c40dfa412ac079.setContent(html_281db548098b4a658f27d61b32e98a49);
+        
+
+        marker_8ed729ebac324de0910685b2eb736401.bindPopup(popup_411a97f0b4b84bf7b5c40dfa412ac079)
+        ;
+
+        
+    
+    
+            var marker_6de3e3c091e34cfdb696b07f2c3150b2 = L.marker(
+                [25.02143812611675, -157.338795159015],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_08392cbf7a314c4dbc54bcf2d68c482b = L.popup({"maxWidth": 500});
+
+        
+            var html_5cec0a994d384b4190088b4765328127 = $(`<div id="html_5cec0a994d384b4190088b4765328127" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 10 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 10 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 10 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 10 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_08392cbf7a314c4dbc54bcf2d68c482b.setContent(html_5cec0a994d384b4190088b4765328127);
+        
+
+        marker_6de3e3c091e34cfdb696b07f2c3150b2.bindPopup(popup_08392cbf7a314c4dbc54bcf2d68c482b)
+        ;
+
+        
+    
+    
+            var marker_340e8a2f5f344dfcb5cf9524146e599e = L.marker(
+                [-1.044774840116034, -96.28659951166577],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_aceb42717f7341f5b086ebd649b6b139 = L.popup({"maxWidth": 500});
+
+        
+            var html_2cf4891c7e0a40f2b571f3b51ceb5faa = $(`<div id="html_2cf4891c7e0a40f2b571f3b51ceb5faa" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 7 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 7 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 7 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 7 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_aceb42717f7341f5b086ebd649b6b139.setContent(html_2cf4891c7e0a40f2b571f3b51ceb5faa);
+        
+
+        marker_340e8a2f5f344dfcb5cf9524146e599e.bindPopup(popup_aceb42717f7341f5b086ebd649b6b139)
+        ;
+
+        
+    
+    
+            var marker_f9992ed99e9b4db7ab7af29d48858d80 = L.marker(
+                [19.503436903217377, -109.72098431249657],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_0cfe034139d84d42bbdf465696127dd1 = L.popup({"maxWidth": 500});
+
+        
+            var html_51edfaf5539d47148dd447eaa80d2292 = $(`<div id="html_51edfaf5539d47148dd447eaa80d2292" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 11 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 12 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_0cfe034139d84d42bbdf465696127dd1.setContent(html_51edfaf5539d47148dd447eaa80d2292);
+        
+
+        marker_f9992ed99e9b4db7ab7af29d48858d80.bindPopup(popup_0cfe034139d84d42bbdf465696127dd1)
+        ;
+
+        
+    
+    
+            var marker_f64a0997f2754354a7915d8ea1d5e903 = L.marker(
+                [-61.37063410962497, -149.26706134473238],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_05f2e1649f7c423c9f083817f776867e = L.popup({"maxWidth": 500});
+
+        
+            var html_3d72f102b5f34effb25a604e2bf013e5 = $(`<div id="html_3d72f102b5f34effb25a604e2bf013e5" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -17 - Temp 	 light snow - Weather <hr width = 5>15:00:00 - Time 	 -16 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -16 - Temp 	 light snow - Weather <hr width = 5>21:00:00 - Time 	 -15 - Temp 	 light snow - Weather <hr width = 5></div>`)[0];
+            popup_05f2e1649f7c423c9f083817f776867e.setContent(html_3d72f102b5f34effb25a604e2bf013e5);
+        
+
+        marker_f64a0997f2754354a7915d8ea1d5e903.bindPopup(popup_05f2e1649f7c423c9f083817f776867e)
+        ;
+
+        
+    
+    
+            var marker_28e17eb164e641689478818ea10278ab = L.marker(
+                [78.52455830010979, -52.76809363769712],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_5702bfedea8e4ed59502f5dba935e28c = L.popup({"maxWidth": 500});
+
+        
+            var html_9a6c7230d9b14b1f8acf5a2dafca2647 = $(`<div id="html_9a6c7230d9b14b1f8acf5a2dafca2647" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -54 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 -55 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -56 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -55 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_5702bfedea8e4ed59502f5dba935e28c.setContent(html_9a6c7230d9b14b1f8acf5a2dafca2647);
+        
+
+        marker_28e17eb164e641689478818ea10278ab.bindPopup(popup_5702bfedea8e4ed59502f5dba935e28c)
+        ;
+
+        
+    
+    
+            var marker_e390854e1058487b9aafc8e46c29514d = L.marker(
+                [68.69518407723518, -100.02979689364027],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_82156e46d18a4afe959e7871ecca8447 = L.popup({"maxWidth": 500});
+
+        
+            var html_6923fc8bcb8a403ca3333ee2fc84e3d5 = $(`<div id="html_6923fc8bcb8a403ca3333ee2fc84e3d5" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -14 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 -14 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -14 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -14 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_82156e46d18a4afe959e7871ecca8447.setContent(html_6923fc8bcb8a403ca3333ee2fc84e3d5);
+        
+
+        marker_e390854e1058487b9aafc8e46c29514d.bindPopup(popup_82156e46d18a4afe959e7871ecca8447)
+        ;
+
+        
+    
+    
+            var marker_652c2c5e6a9c4d2e86ffcbecd943caf2 = L.marker(
+                [-42.07508561600015, -83.65674819757614],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_318aedba463d4f56bc516769621df1c5 = L.popup({"maxWidth": 500});
+
+        
+            var html_4a08a26272324c539c1b6c7ffbf0882a = $(`<div id="html_4a08a26272324c539c1b6c7ffbf0882a" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_318aedba463d4f56bc516769621df1c5.setContent(html_4a08a26272324c539c1b6c7ffbf0882a);
+        
+
+        marker_652c2c5e6a9c4d2e86ffcbecd943caf2.bindPopup(popup_318aedba463d4f56bc516769621df1c5)
+        ;
+
+        
+    
+    
+            var marker_90f45ef4515940c698e78805ff03fee6 = L.marker(
+                [5.871296450753917, 158.8323995270361],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_03b9e9d691af4adf87954d580b40379a = L.popup({"maxWidth": 500});
+
+        
+            var html_293bb6878b9a4b619b5c0dfbc4056918 = $(`<div id="html_293bb6878b9a4b619b5c0dfbc4056918" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 15 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 15 - Temp 	 few clouds - Weather <hr width = 5>18:00:00 - Time 	 14 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 14 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_03b9e9d691af4adf87954d580b40379a.setContent(html_293bb6878b9a4b619b5c0dfbc4056918);
+        
+
+        marker_90f45ef4515940c698e78805ff03fee6.bindPopup(popup_03b9e9d691af4adf87954d580b40379a)
+        ;
+
+        
+    
+    
+            var marker_949199d50af24a12b7e6b24c8e330e0a = L.marker(
+                [-61.33115178594485, -164.34907282465164],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_9648932234d64eb68e74cc36d7a07402 = L.popup({"maxWidth": 500});
+
+        
+            var html_2e129f640c75420a9cddc93e183b3d84 = $(`<div id="html_2e129f640c75420a9cddc93e183b3d84" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -15 - Temp 	 light snow - Weather <hr width = 5>15:00:00 - Time 	 -15 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -15 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -15 - Temp 	 light snow - Weather <hr width = 5></div>`)[0];
+            popup_9648932234d64eb68e74cc36d7a07402.setContent(html_2e129f640c75420a9cddc93e183b3d84);
+        
+
+        marker_949199d50af24a12b7e6b24c8e330e0a.bindPopup(popup_9648932234d64eb68e74cc36d7a07402)
+        ;
+
+        
+    
+    
+            var marker_61479da1189b407a8b4c9a24e03f5261 = L.marker(
+                [52.51942464836924, 164.9702828835225],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_d1bd02ab08334a319441ba23ffee3415 = L.popup({"maxWidth": 500});
+
+        
+            var html_fad40c97ef344ad6adcab4818321b937 = $(`<div id="html_fad40c97ef344ad6adcab4818321b937" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -9 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -9 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -9 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 -9 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_d1bd02ab08334a319441ba23ffee3415.setContent(html_fad40c97ef344ad6adcab4818321b937);
+        
+
+        marker_61479da1189b407a8b4c9a24e03f5261.bindPopup(popup_d1bd02ab08334a319441ba23ffee3415)
+        ;
+
+        
+    
+    
+            var marker_ed305a10296948ebafd1ca12678056d3 = L.marker(
+                [-24.036121349736575, -70.68405232883214],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_80d7bda19c8b40bbacff7bfcedf6b39c = L.popup({"maxWidth": 500});
+
+        
+            var html_84931fad53b64c88b53f563a26c729f1 = $(`<div id="html_84931fad53b64c88b53f563a26c729f1" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 0 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 0 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 1 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 1 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_80d7bda19c8b40bbacff7bfcedf6b39c.setContent(html_84931fad53b64c88b53f563a26c729f1);
+        
+
+        marker_ed305a10296948ebafd1ca12678056d3.bindPopup(popup_80d7bda19c8b40bbacff7bfcedf6b39c)
+        ;
+
+        
+    
+    
+            var marker_fac3b1c52a8e498a9e6ad236e71e369c = L.marker(
+                [18.88007780266112, -171.35659317531596],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_4459399c6cdb4636942304ad6ef356e0 = L.popup({"maxWidth": 500});
+
+        
+            var html_1a76ae5fce9944df9ee3d1464c66db4b = $(`<div id="html_1a76ae5fce9944df9ee3d1464c66db4b" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 12 - Temp 	 moderate rain - Weather <hr width = 5>15:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 12 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 12 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_4459399c6cdb4636942304ad6ef356e0.setContent(html_1a76ae5fce9944df9ee3d1464c66db4b);
+        
+
+        marker_fac3b1c52a8e498a9e6ad236e71e369c.bindPopup(popup_4459399c6cdb4636942304ad6ef356e0)
+        ;
+
+        
+    
+    
+            var marker_ba5ea019aaf84844a3728e67dc113326 = L.marker(
+                [41.53612039141055, -79.58963235919866],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_e29f92fdf8fc40edbca2d8b3b07f5788 = L.popup({"maxWidth": 500});
+
+        
+            var html_f8b1bf3d6c304b76b67fe8eeecde9db1 = $(`<div id="html_f8b1bf3d6c304b76b67fe8eeecde9db1" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -8 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 -8 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -7 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 -8 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_e29f92fdf8fc40edbca2d8b3b07f5788.setContent(html_f8b1bf3d6c304b76b67fe8eeecde9db1);
+        
+
+        marker_ba5ea019aaf84844a3728e67dc113326.bindPopup(popup_e29f92fdf8fc40edbca2d8b3b07f5788)
+        ;
+
+        
+    
+    
+            var marker_236107dfeb964b9182af4d4b5ae89cb3 = L.marker(
+                [38.37784859641965, 45.12258161904961],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_2dea5317efcd4dc4b11084de3f6748e2 = L.popup({"maxWidth": 500});
+
+        
+            var html_ec520fc65bb94b558f8409bcdc87c6e2 = $(`<div id="html_ec520fc65bb94b558f8409bcdc87c6e2" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -2 - Temp 	 scattered clouds - Weather <hr width = 5>15:00:00 - Time 	 -3 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -6 - Temp 	 few clouds - Weather <hr width = 5>21:00:00 - Time 	 -7 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_2dea5317efcd4dc4b11084de3f6748e2.setContent(html_ec520fc65bb94b558f8409bcdc87c6e2);
+        
+
+        marker_236107dfeb964b9182af4d4b5ae89cb3.bindPopup(popup_2dea5317efcd4dc4b11084de3f6748e2)
+        ;
+
+        
+    
+    
+            var marker_715de75ad5f8474cbbcbd408a1a1f298 = L.marker(
+                [61.78182791725018, -2.8162673904924134],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_d20de9f3ec294ed49f3faa8a0628f159 = L.popup({"maxWidth": 500});
+
+        
+            var html_e4eb6f69a9e343f2b62f5fdae48f3e5c = $(`<div id="html_e4eb6f69a9e343f2b62f5fdae48f3e5c" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -5 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -5 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 -4 - Temp 	 moderate rain - Weather <hr width = 5>21:00:00 - Time 	 -4 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_d20de9f3ec294ed49f3faa8a0628f159.setContent(html_e4eb6f69a9e343f2b62f5fdae48f3e5c);
+        
+
+        marker_715de75ad5f8474cbbcbd408a1a1f298.bindPopup(popup_d20de9f3ec294ed49f3faa8a0628f159)
+        ;
+
+        
+    
+    
+            var marker_cacadfeee1cb4e6188b739930003a679 = L.marker(
+                [52.00141822766537, 66.43664172494522],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_49742a60be2944ccb86935314a97d85a = L.popup({"maxWidth": 500});
+
+        
+            var html_d5cfdedc5cbb465696a525f62e276348 = $(`<div id="html_d5cfdedc5cbb465696a525f62e276348" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -1 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 -2 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -4 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 -5 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_49742a60be2944ccb86935314a97d85a.setContent(html_d5cfdedc5cbb465696a525f62e276348);
+        
+
+        marker_cacadfeee1cb4e6188b739930003a679.bindPopup(popup_49742a60be2944ccb86935314a97d85a)
+        ;
+
+        
+    
+    
+            var marker_5153a8db5562453b9139e55911b800aa = L.marker(
+                [-79.79108759679005, -80.72270381301988],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_b6bfaccd42db4580ac26b452edee29ad = L.popup({"maxWidth": 500});
+
+        
+            var html_cf682e3198b240b9bade06d048e8ce0a = $(`<div id="html_cf682e3198b240b9bade06d048e8ce0a" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -40 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -38 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -36 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -36 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_b6bfaccd42db4580ac26b452edee29ad.setContent(html_cf682e3198b240b9bade06d048e8ce0a);
+        
+
+        marker_5153a8db5562453b9139e55911b800aa.bindPopup(popup_b6bfaccd42db4580ac26b452edee29ad)
+        ;
+
+        
+    
+    
+            var marker_a5a74e88420b4651bda23a46c1531836 = L.marker(
+                [-50.551246864084646, -89.0108002173704],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_70e65fb8b33f4211b2114263d22b3044 = L.popup({"maxWidth": 500});
+
+        
+            var html_b83b13db4f834f84ba626e284de24e57 = $(`<div id="html_b83b13db4f834f84ba626e284de24e57" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -8 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -8 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -8 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -8 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_70e65fb8b33f4211b2114263d22b3044.setContent(html_b83b13db4f834f84ba626e284de24e57);
+        
+
+        marker_a5a74e88420b4651bda23a46c1531836.bindPopup(popup_70e65fb8b33f4211b2114263d22b3044)
+        ;
+
+        
+    
+    
+            var marker_11c83c29c8164f428f7e6d063876df4a = L.marker(
+                [40.28912511696987, 26.560317125630803],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_5e98959914554ee8b7de5cccb8afffd8 = L.popup({"maxWidth": 500});
+
+        
+            var html_9ce5346792234622b41e73a878cf44f4 = $(`<div id="html_9ce5346792234622b41e73a878cf44f4" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 6 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 5 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 2 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 2 - Temp 	 few clouds - Weather <hr width = 5></div>`)[0];
+            popup_5e98959914554ee8b7de5cccb8afffd8.setContent(html_9ce5346792234622b41e73a878cf44f4);
+        
+
+        marker_11c83c29c8164f428f7e6d063876df4a.bindPopup(popup_5e98959914554ee8b7de5cccb8afffd8)
+        ;
+
+        
+    
+    
+            var marker_b01230c2d84c477493ce102874073e13 = L.marker(
+                [62.221153515748654, 141.12017425238759],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_315f0b32431d4feab69aefda0a17fcb4 = L.popup({"maxWidth": 500});
+
+        
+            var html_f15c3436b1c141aeb85d1849f49bf6b4 = $(`<div id="html_f15c3436b1c141aeb85d1849f49bf6b4" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -36 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -37 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 -38 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 -38 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_315f0b32431d4feab69aefda0a17fcb4.setContent(html_f15c3436b1c141aeb85d1849f49bf6b4);
+        
+
+        marker_b01230c2d84c477493ce102874073e13.bindPopup(popup_315f0b32431d4feab69aefda0a17fcb4)
+        ;
+
+        
+    
+    
+            var marker_7ff41b06b1a0473f94a8e49ddda7c252 = L.marker(
+                [-40.80217686452612, -2.1515160317379696],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_5acf900838d240b2a1df2b8f0a98550d = L.popup({"maxWidth": 500});
+
+        
+            var html_5ea3137743184e788ec5b43dae18ffe1 = $(`<div id="html_5ea3137743184e788ec5b43dae18ffe1" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -4 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -4 - Temp 	 few clouds - Weather <hr width = 5>21:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_5acf900838d240b2a1df2b8f0a98550d.setContent(html_5ea3137743184e788ec5b43dae18ffe1);
+        
+
+        marker_7ff41b06b1a0473f94a8e49ddda7c252.bindPopup(popup_5acf900838d240b2a1df2b8f0a98550d)
+        ;
+
+        
+    
+    
+            var marker_b222b13bbfd545f5af002fe4f6d01cac = L.marker(
+                [-39.479362264219226, 133.82423893407213],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_89a769d164814d61b9ebe8cdb06db9b2 = L.popup({"maxWidth": 500});
+
+        
+            var html_7f062b12a3734f08b794ac9067fdf5a5 = $(`<div id="html_7f062b12a3734f08b794ac9067fdf5a5" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -4 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 -4 - Temp 	 few clouds - Weather <hr width = 5>18:00:00 - Time 	 -4 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_89a769d164814d61b9ebe8cdb06db9b2.setContent(html_7f062b12a3734f08b794ac9067fdf5a5);
+        
+
+        marker_b222b13bbfd545f5af002fe4f6d01cac.bindPopup(popup_89a769d164814d61b9ebe8cdb06db9b2)
+        ;
+
+        
+    
+    
+            var marker_b781251f93204cbbab75466ef03d892f = L.marker(
+                [-62.40541891615791, 46.080410293262645],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_13daf5f6617644ebb6bfd74fa40a6c11 = L.popup({"maxWidth": 500});
+
+        
+            var html_b21ef18af49f4f1885b218feba6b7fda = $(`<div id="html_b21ef18af49f4f1885b218feba6b7fda" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -16 - Temp 	 light snow - Weather <hr width = 5>15:00:00 - Time 	 -16 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -20 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -18 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_13daf5f6617644ebb6bfd74fa40a6c11.setContent(html_b21ef18af49f4f1885b218feba6b7fda);
+        
+
+        marker_b781251f93204cbbab75466ef03d892f.bindPopup(popup_13daf5f6617644ebb6bfd74fa40a6c11)
+        ;
+
+        
+    
+    
+            var marker_f55d85d581384625843bd59f163ada08 = L.marker(
+                [-72.49455877944978, 147.5303022971072],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_2d8fa423851847e4a9b66d211b0c3e67 = L.popup({"maxWidth": 500});
+
+        
+            var html_3bfe76e6d2aa4d46bd89b281fb185b87 = $(`<div id="html_3bfe76e6d2aa4d46bd89b281fb185b87" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -39 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -41 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -43 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -41 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_2d8fa423851847e4a9b66d211b0c3e67.setContent(html_3bfe76e6d2aa4d46bd89b281fb185b87);
+        
+
+        marker_f55d85d581384625843bd59f163ada08.bindPopup(popup_2d8fa423851847e4a9b66d211b0c3e67)
+        ;
+
+        
+    
+    
+            var marker_cdfcbd3016184f448c79efee40ce5d0d = L.marker(
+                [-47.74418943706187, -17.762275619005806],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_05b4aacb46c84e719f045bd83955b161 = L.popup({"maxWidth": 500});
+
+        
+            var html_7f6ca11fce1b4b10b076c5e487f8f325 = $(`<div id="html_7f6ca11fce1b4b10b076c5e487f8f325" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -9 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -8 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -8 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -8 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_05b4aacb46c84e719f045bd83955b161.setContent(html_7f6ca11fce1b4b10b076c5e487f8f325);
+        
+
+        marker_cdfcbd3016184f448c79efee40ce5d0d.bindPopup(popup_05b4aacb46c84e719f045bd83955b161)
+        ;
+
+        
+    
+    
+            var marker_7cb86ab120c44cca8504deba24dc223e = L.marker(
+                [-38.17671907357328, -172.83971991973152],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_2392785191d9410c9cf663ed7f847c5d = L.popup({"maxWidth": 500});
+
+        
+            var html_d877e922406d4229bf5eac0defed932c = $(`<div id="html_d877e922406d4229bf5eac0defed932c" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -2 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 -2 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -2 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 -2 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_2392785191d9410c9cf663ed7f847c5d.setContent(html_d877e922406d4229bf5eac0defed932c);
+        
+
+        marker_7cb86ab120c44cca8504deba24dc223e.bindPopup(popup_2392785191d9410c9cf663ed7f847c5d)
+        ;
+
+        
+    
+    
+            var marker_9d076738eed444498400421762c0bf97 = L.marker(
+                [-20.695995145935527, 1.5091865225215884],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_499a583f95c841b7a40c65301f719732 = L.popup({"maxWidth": 500});
+
+        
+            var html_afae3a193de149408a0238b81bebe353 = $(`<div id="html_afae3a193de149408a0238b81bebe353" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 5 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 5 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 5 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 5 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_499a583f95c841b7a40c65301f719732.setContent(html_afae3a193de149408a0238b81bebe353);
+        
+
+        marker_9d076738eed444498400421762c0bf97.bindPopup(popup_499a583f95c841b7a40c65301f719732)
+        ;
+
+        
+    
+    
+            var marker_e25741d54ac14fce93f22117ab820d0f = L.marker(
+                [-7.214646917946169, -93.21902647108307],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_ae5c9077f49e48ecadc0576ccd538e27 = L.popup({"maxWidth": 500});
+
+        
+            var html_acb2604808814cb9a3f78fdb48b7192e = $(`<div id="html_acb2604808814cb9a3f78fdb48b7192e" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 6 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 6 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 7 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 7 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_ae5c9077f49e48ecadc0576ccd538e27.setContent(html_acb2604808814cb9a3f78fdb48b7192e);
+        
+
+        marker_e25741d54ac14fce93f22117ab820d0f.bindPopup(popup_ae5c9077f49e48ecadc0576ccd538e27)
+        ;
+
+        
+    
+    
+            var marker_6b28ef46141f455e80b79eaa9e894f94 = L.marker(
+                [-80.98963890383398, 171.77212235747498],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_f5ea615ac3684a0ab296e33c8dc0f0a9 = L.popup({"maxWidth": 500});
+
+        
+            var html_152aa8b4d49342ebafe296cb7c7a5d32 = $(`<div id="html_152aa8b4d49342ebafe296cb7c7a5d32" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -46 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 -47 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -46 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -41 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_f5ea615ac3684a0ab296e33c8dc0f0a9.setContent(html_152aa8b4d49342ebafe296cb7c7a5d32);
+        
+
+        marker_6b28ef46141f455e80b79eaa9e894f94.bindPopup(popup_f5ea615ac3684a0ab296e33c8dc0f0a9)
+        ;
+
+        
+    
+    
+            var marker_27f60ddac4bd42619c071673019e91b5 = L.marker(
+                [82.68334415907046, -163.4370193874399],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_13c42afe79504919829f5a304d1ac845 = L.popup({"maxWidth": 500});
+
+        
+            var html_d6dc9bb2693f4f6fbade93a704683ab0 = $(`<div id="html_d6dc9bb2693f4f6fbade93a704683ab0" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -30 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -30 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -29 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -29 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_13c42afe79504919829f5a304d1ac845.setContent(html_d6dc9bb2693f4f6fbade93a704683ab0);
+        
+
+        marker_27f60ddac4bd42619c071673019e91b5.bindPopup(popup_13c42afe79504919829f5a304d1ac845)
+        ;
+
+        
+    
+    
+            var marker_86aaf260c45742648175f907fa3abec9 = L.marker(
+                [26.397923581162246, 133.43535057735238],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_c67ff7a86a88498ebd3b0a02c7e17306 = L.popup({"maxWidth": 500});
+
+        
+            var html_58b21ed4778a4498a240be5e979afa75 = $(`<div id="html_58b21ed4778a4498a240be5e979afa75" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 9 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 9 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 10 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 10 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_c67ff7a86a88498ebd3b0a02c7e17306.setContent(html_58b21ed4778a4498a240be5e979afa75);
+        
+
+        marker_86aaf260c45742648175f907fa3abec9.bindPopup(popup_c67ff7a86a88498ebd3b0a02c7e17306)
+        ;
+
+        
+    
+    
+            var marker_fad0830a84f247c08f828ae7cd21617e = L.marker(
+                [37.65405352770446, -126.16169855092383],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_93da9dd626f2468599a5cba0895e9586 = L.popup({"maxWidth": 500});
+
+        
+            var html_a6da55f96cb64c69ae04d6b64077a28a = $(`<div id="html_a6da55f96cb64c69ae04d6b64077a28a" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 1 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 1 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 1 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 1 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_93da9dd626f2468599a5cba0895e9586.setContent(html_a6da55f96cb64c69ae04d6b64077a28a);
+        
+
+        marker_fad0830a84f247c08f828ae7cd21617e.bindPopup(popup_93da9dd626f2468599a5cba0895e9586)
+        ;
+
+        
+    
+    
+            var marker_12bf7112faf646b0b8fafb0f66236b35 = L.marker(
+                [-55.031245764255836, -170.76888625148268],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_78c95507492345f0a58b7fd76f1936ef = L.popup({"maxWidth": 500});
+
+        
+            var html_d65d9cc7d73745a0abc942cd8d786372 = $(`<div id="html_d65d9cc7d73745a0abc942cd8d786372" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -9 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -9 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 -9 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 -9 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_78c95507492345f0a58b7fd76f1936ef.setContent(html_d65d9cc7d73745a0abc942cd8d786372);
+        
+
+        marker_12bf7112faf646b0b8fafb0f66236b35.bindPopup(popup_78c95507492345f0a58b7fd76f1936ef)
+        ;
+
+        
+    
+    
+            var marker_ab0418d60d7c47efb9258bb327842957 = L.marker(
+                [-86.74660050033222, -155.87215384779427],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_a2aee4bff33b46568b1d4cc0b1eb6a96 = L.popup({"maxWidth": 500});
+
+        
+            var html_d2fc9573551249329bd39ae642c09d45 = $(`<div id="html_d2fc9573551249329bd39ae642c09d45" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -50 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -49 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -49 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -49 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_a2aee4bff33b46568b1d4cc0b1eb6a96.setContent(html_d2fc9573551249329bd39ae642c09d45);
+        
+
+        marker_ab0418d60d7c47efb9258bb327842957.bindPopup(popup_a2aee4bff33b46568b1d4cc0b1eb6a96)
+        ;
+
+        
+    
+    
+            var marker_da9eb1877b0a44448322aa7658ee2a07 = L.marker(
+                [-31.53778864451398, 172.04711428741962],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_91ceca342f8641febc801c40c81cb137 = L.popup({"maxWidth": 500});
+
+        
+            var html_d743e349b3bd47e3add7fe8ad243ed95 = $(`<div id="html_d743e349b3bd47e3add7fe8ad243ed95" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 4 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 3 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 3 - Temp 	 few clouds - Weather <hr width = 5>21:00:00 - Time 	 3 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_91ceca342f8641febc801c40c81cb137.setContent(html_d743e349b3bd47e3add7fe8ad243ed95);
+        
+
+        marker_da9eb1877b0a44448322aa7658ee2a07.bindPopup(popup_91ceca342f8641febc801c40c81cb137)
+        ;
+
+        
+    
+    
+            var marker_406c334b7ccd42e4a4cd9e0354cc013e = L.marker(
+                [35.228625822603576, 2.192718501631475],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_a783567cd02946db861b3290bead5035 = L.popup({"maxWidth": 500});
+
+        
+            var html_02700bbfda6948c5867e1e55b74fb90c = $(`<div id="html_02700bbfda6948c5867e1e55b74fb90c" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 2 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 4 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 4 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 3 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_a783567cd02946db861b3290bead5035.setContent(html_02700bbfda6948c5867e1e55b74fb90c);
+        
+
+        marker_406c334b7ccd42e4a4cd9e0354cc013e.bindPopup(popup_a783567cd02946db861b3290bead5035)
+        ;
+
+        
+    
+    
+            var marker_6ba6f032a4f34265be2d09a47ca05278 = L.marker(
+                [-32.39658242767215, 6.077188112770955],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_5091119996674615bdce862cac37c0e0 = L.popup({"maxWidth": 500});
+
+        
+            var html_5636104352b64789b5a4a181708bab31 = $(`<div id="html_5636104352b64789b5a4a181708bab31" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 1 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 1 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 1 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 1 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_5091119996674615bdce862cac37c0e0.setContent(html_5636104352b64789b5a4a181708bab31);
+        
+
+        marker_6ba6f032a4f34265be2d09a47ca05278.bindPopup(popup_5091119996674615bdce862cac37c0e0)
+        ;
+
+        
+    
+    
+            var marker_808c0fbbcf314af091372da60e7da88d = L.marker(
+                [-77.52039975402069, 154.38700505629077],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_504037829a39446e81a4aaf1b121c475 = L.popup({"maxWidth": 500});
+
+        
+            var html_0067b887c5f749b8a616d29b263c28c6 = $(`<div id="html_0067b887c5f749b8a616d29b263c28c6" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -49 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -50 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -52 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 -50 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_504037829a39446e81a4aaf1b121c475.setContent(html_0067b887c5f749b8a616d29b263c28c6);
+        
+
+        marker_808c0fbbcf314af091372da60e7da88d.bindPopup(popup_504037829a39446e81a4aaf1b121c475)
+        ;
+
+        
+    
+    
+            var marker_929f544ae5ce498f9b7ef3a5a89f9180 = L.marker(
+                [68.79903277660202, -163.2437009752641],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_bbc7dc426910412a971b886f9b8ef748 = L.popup({"maxWidth": 500});
+
+        
+            var html_00b2a05fd599487c88039852689cfa28 = $(`<div id="html_00b2a05fd599487c88039852689cfa28" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -21 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -23 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -24 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -24 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_bbc7dc426910412a971b886f9b8ef748.setContent(html_00b2a05fd599487c88039852689cfa28);
+        
+
+        marker_929f544ae5ce498f9b7ef3a5a89f9180.bindPopup(popup_bbc7dc426910412a971b886f9b8ef748)
+        ;
+
+        
+    
+    
+            var marker_48a55fcacb4f41acbaa885d4c7915bc1 = L.marker(
+                [66.99117227424279, 122.1935310572103],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_975918f161bc435b9c08ad24089b275f = L.popup({"maxWidth": 500});
+
+        
+            var html_7fd976b6c5614772b0fdde905bffc0a0 = $(`<div id="html_7fd976b6c5614772b0fdde905bffc0a0" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -29 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -25 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -20 - Temp 	 snow - Weather <hr width = 5>21:00:00 - Time 	 -20 - Temp 	 light snow - Weather <hr width = 5></div>`)[0];
+            popup_975918f161bc435b9c08ad24089b275f.setContent(html_7fd976b6c5614772b0fdde905bffc0a0);
+        
+
+        marker_48a55fcacb4f41acbaa885d4c7915bc1.bindPopup(popup_975918f161bc435b9c08ad24089b275f)
+        ;
+
+        
+    
+    
+            var marker_e3820c39f40443a99b7425c3a932171f = L.marker(
+                [-87.81978932059486, 132.91067552560645],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_21d55ec903b34b99bf6f42b1cff4d87f = L.popup({"maxWidth": 500});
+
+        
+            var html_b8e14ad53f554e4982901f4353ff8545 = $(`<div id="html_b8e14ad53f554e4982901f4353ff8545" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -63 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 -65 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -67 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -66 - Temp 	 few clouds - Weather <hr width = 5></div>`)[0];
+            popup_21d55ec903b34b99bf6f42b1cff4d87f.setContent(html_b8e14ad53f554e4982901f4353ff8545);
+        
+
+        marker_e3820c39f40443a99b7425c3a932171f.bindPopup(popup_21d55ec903b34b99bf6f42b1cff4d87f)
+        ;
+
+        
+    
+    
+            var marker_11aa56bc7ba841b4827a93190bd9f102 = L.marker(
+                [32.886749135422804, 77.80740148309525],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_84ecf43a150a47b6a6b720419a011e35 = L.popup({"maxWidth": 500});
+
+        
+            var html_f830980e61a549a0b265b6199319a19c = $(`<div id="html_f830980e61a549a0b265b6199319a19c" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -23 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -24 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -26 - Temp 	 light snow - Weather <hr width = 5>21:00:00 - Time 	 -26 - Temp 	 light snow - Weather <hr width = 5></div>`)[0];
+            popup_84ecf43a150a47b6a6b720419a011e35.setContent(html_f830980e61a549a0b265b6199319a19c);
+        
+
+        marker_11aa56bc7ba841b4827a93190bd9f102.bindPopup(popup_84ecf43a150a47b6a6b720419a011e35)
+        ;
+
+        
+    
+    
+            var marker_bd43a091d4ca44ffaa0ebacf106b0f4b = L.marker(
+                [-22.042736423864213, -39.07194860613606],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_1d8225a0d3874a2ba734d93f719465df = L.popup({"maxWidth": 500});
+
+        
+            var html_41a765a6487449c0a1d408fbebc5b73b = $(`<div id="html_41a765a6487449c0a1d408fbebc5b73b" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 8 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 8 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 9 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 9 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_1d8225a0d3874a2ba734d93f719465df.setContent(html_41a765a6487449c0a1d408fbebc5b73b);
+        
+
+        marker_bd43a091d4ca44ffaa0ebacf106b0f4b.bindPopup(popup_1d8225a0d3874a2ba734d93f719465df)
+        ;
+
+        
+    
+    
+            var marker_646885aff56c46bd899a5d4cf3d19c9e = L.marker(
+                [-26.801701614733872, -131.12287987669416],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_cb36338d7be947f1b416f124f6c149d4 = L.popup({"maxWidth": 500});
+
+        
+            var html_7773cadd1d554a3ebab7eb2e0b2eac7d = $(`<div id="html_7773cadd1d554a3ebab7eb2e0b2eac7d" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 8 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 8 - Temp 	 few clouds - Weather <hr width = 5>18:00:00 - Time 	 9 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 9 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_cb36338d7be947f1b416f124f6c149d4.setContent(html_7773cadd1d554a3ebab7eb2e0b2eac7d);
+        
+
+        marker_646885aff56c46bd899a5d4cf3d19c9e.bindPopup(popup_cb36338d7be947f1b416f124f6c149d4)
+        ;
+
+        
+    
+    
+            var marker_33a00e09e6d24fbc9541107363221438 = L.marker(
+                [-45.013885787119555, 103.448267295618],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_12bb7266415b48ee82324397452ceef9 = L.popup({"maxWidth": 500});
+
+        
+            var html_fab4232fa5a44c5b8a0cf9344dd2c8ba = $(`<div id="html_fab4232fa5a44c5b8a0cf9344dd2c8ba" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -7 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -7 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 -8 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 -8 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_12bb7266415b48ee82324397452ceef9.setContent(html_fab4232fa5a44c5b8a0cf9344dd2c8ba);
+        
+
+        marker_33a00e09e6d24fbc9541107363221438.bindPopup(popup_12bb7266415b48ee82324397452ceef9)
+        ;
+
+        
+    
+    
+            var marker_f6da4359328e48eca311c04d6713aa96 = L.marker(
+                [-10.19056434916989, 25.03078134723401],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_01ec824045f943849d3a77bb0f218626 = L.popup({"maxWidth": 500});
+
+        
+            var html_0c71d96259de4d578dd3d27ce3886ef2 = $(`<div id="html_0c71d96259de4d578dd3d27ce3886ef2" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 19 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 14 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 8 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 5 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_01ec824045f943849d3a77bb0f218626.setContent(html_0c71d96259de4d578dd3d27ce3886ef2);
+        
+
+        marker_f6da4359328e48eca311c04d6713aa96.bindPopup(popup_01ec824045f943849d3a77bb0f218626)
+        ;
+
+        
+    
+    
+            var marker_9ca228cfda4b4b44911dd9e71d3ed26c = L.marker(
+                [73.8193176395121, 131.43804798746146],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_d54d68f7805542d1bd24e52c04945a21 = L.popup({"maxWidth": 500});
+
+        
+            var html_2cc6efd742b94a50b3b52b95bb9cd84e = $(`<div id="html_2cc6efd742b94a50b3b52b95bb9cd84e" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -25 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -25 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -25 - Temp 	 few clouds - Weather <hr width = 5>21:00:00 - Time 	 -25 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_d54d68f7805542d1bd24e52c04945a21.setContent(html_2cc6efd742b94a50b3b52b95bb9cd84e);
+        
+
+        marker_9ca228cfda4b4b44911dd9e71d3ed26c.bindPopup(popup_d54d68f7805542d1bd24e52c04945a21)
+        ;
+
+        
+    
+    
+            var marker_8be2e595aa0d4fb6ac984c5995920066 = L.marker(
+                [-23.586097249726606, 100.71594091946503],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_ce3da4f27ebb4775a6b65f4ccc38ec43 = L.popup({"maxWidth": 500});
+
+        
+            var html_6a5cd9fd2f804b2985a0c5f251473e63 = $(`<div id="html_6a5cd9fd2f804b2985a0c5f251473e63" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 6 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 6 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 6 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 5 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_ce3da4f27ebb4775a6b65f4ccc38ec43.setContent(html_6a5cd9fd2f804b2985a0c5f251473e63);
+        
+
+        marker_8be2e595aa0d4fb6ac984c5995920066.bindPopup(popup_ce3da4f27ebb4775a6b65f4ccc38ec43)
+        ;
+
+        
+    
+    
+            var marker_e00e20be828b4f9a8e8d60c97d79b59d = L.marker(
+                [50.568717152411296, -96.51422492286548],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_4063b5e0e73149a895162d7b012af54d = L.popup({"maxWidth": 500});
+
+        
+            var html_f67d8ed59a44455ca824e9d194409d9c = $(`<div id="html_f67d8ed59a44455ca824e9d194409d9c" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -10 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -11 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -10 - Temp 	 few clouds - Weather <hr width = 5>21:00:00 - Time 	 -8 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_4063b5e0e73149a895162d7b012af54d.setContent(html_f67d8ed59a44455ca824e9d194409d9c);
+        
+
+        marker_e00e20be828b4f9a8e8d60c97d79b59d.bindPopup(popup_4063b5e0e73149a895162d7b012af54d)
+        ;
+
+        
+    
+    
+            var marker_fd33f37cb52e463f86b36c8b9afa97c4 = L.marker(
+                [33.41089623067093, 131.74144948653264],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_3c875bf243bf4e22bf688a97fdd9a3af = L.popup({"maxWidth": 500});
+
+        
+            var html_9a191b0dea6744fe8d7bc93af8a7487f = $(`<div id="html_9a191b0dea6744fe8d7bc93af8a7487f" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 3 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 2 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 1 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 0 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_3c875bf243bf4e22bf688a97fdd9a3af.setContent(html_9a191b0dea6744fe8d7bc93af8a7487f);
+        
+
+        marker_fd33f37cb52e463f86b36c8b9afa97c4.bindPopup(popup_3c875bf243bf4e22bf688a97fdd9a3af)
+        ;
+
+        
+    
+    
+            var marker_11cd64cd70a0434281bed9ae5f420ab9 = L.marker(
+                [72.12819595669237, 75.58418627421133],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_bf0d3e1578544d888048299d03c7d30a = L.popup({"maxWidth": 500});
+
+        
+            var html_9d8c6fb643b746ddba972c953a4a1e9d = $(`<div id="html_9d8c6fb643b746ddba972c953a4a1e9d" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -22 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -22 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -22 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -22 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_bf0d3e1578544d888048299d03c7d30a.setContent(html_9d8c6fb643b746ddba972c953a4a1e9d);
+        
+
+        marker_11cd64cd70a0434281bed9ae5f420ab9.bindPopup(popup_bf0d3e1578544d888048299d03c7d30a)
+        ;
+
+        
+    
+    
+            var marker_3e646d2128e84d2b9707cafeb852b3bb = L.marker(
+                [-83.18233074079328, 178.91733075703758],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_091076c6d16e43e1b49a588a65da0adb = L.popup({"maxWidth": 500});
+
+        
+            var html_df34b61ee843429d9f8bb99001de8c9a = $(`<div id="html_df34b61ee843429d9f8bb99001de8c9a" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -40 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 -41 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -39 - Temp 	 few clouds - Weather <hr width = 5>21:00:00 - Time 	 -34 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_091076c6d16e43e1b49a588a65da0adb.setContent(html_df34b61ee843429d9f8bb99001de8c9a);
+        
+
+        marker_3e646d2128e84d2b9707cafeb852b3bb.bindPopup(popup_091076c6d16e43e1b49a588a65da0adb)
+        ;
+
+        
+    
+    
+            var marker_f61ba0014e494b17a7ad82759db1771c = L.marker(
+                [-53.39876895405595, -136.13462726206544],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_672e3556678d4bc2a9437105273ad8d3 = L.popup({"maxWidth": 500});
+
+        
+            var html_df9f54e60231437495815c7914ad1576 = $(`<div id="html_df9f54e60231437495815c7914ad1576" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -12 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -12 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -11 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -10 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_672e3556678d4bc2a9437105273ad8d3.setContent(html_df9f54e60231437495815c7914ad1576);
+        
+
+        marker_f61ba0014e494b17a7ad82759db1771c.bindPopup(popup_672e3556678d4bc2a9437105273ad8d3)
+        ;
+
+        
+    
+    
+            var marker_f5e0f9809fcc4e4b9fe02aa93a13637a = L.marker(
+                [88.45437036247642, 64.17191766617242],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_2174ffb8af7f4275b3ce04538fb4cd26 = L.popup({"maxWidth": 500});
+
+        
+            var html_35eb579fe07846bf813d1acb8162a321 = $(`<div id="html_35eb579fe07846bf813d1acb8162a321" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -37 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -37 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -37 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -37 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_2174ffb8af7f4275b3ce04538fb4cd26.setContent(html_35eb579fe07846bf813d1acb8162a321);
+        
+
+        marker_f5e0f9809fcc4e4b9fe02aa93a13637a.bindPopup(popup_2174ffb8af7f4275b3ce04538fb4cd26)
+        ;
+
+        
+    
+    
+            var marker_c111a173a9584459a73b2bf625d0f766 = L.marker(
+                [-71.08732214931624, 23.97115649826216],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_486304eff67f473aaaf3ff5ce8edb54e = L.popup({"maxWidth": 500});
+
+        
+            var html_89582585f9f4433385807ca5be5bf8b2 = $(`<div id="html_89582585f9f4433385807ca5be5bf8b2" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -29 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 -29 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 -30 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -32 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_486304eff67f473aaaf3ff5ce8edb54e.setContent(html_89582585f9f4433385807ca5be5bf8b2);
+        
+
+        marker_c111a173a9584459a73b2bf625d0f766.bindPopup(popup_486304eff67f473aaaf3ff5ce8edb54e)
+        ;
+
+        
+    
+    
+            var marker_834e3d8952bb4322a8bf3a9aae7a3de8 = L.marker(
+                [-5.06339463888736, 176.2119547240133],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_9ffd391f90444607920458269cd17104 = L.popup({"maxWidth": 500});
+
+        
+            var html_42266ca05c8948e58e59cd980fbdb4cd = $(`<div id="html_42266ca05c8948e58e59cd980fbdb4cd" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 13 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_9ffd391f90444607920458269cd17104.setContent(html_42266ca05c8948e58e59cd980fbdb4cd);
+        
+
+        marker_834e3d8952bb4322a8bf3a9aae7a3de8.bindPopup(popup_9ffd391f90444607920458269cd17104)
+        ;
+
+        
+    
+    
+            var marker_7ab4c48d329148f9a6a486ed85c6274c = L.marker(
+                [-18.08432071769161, 157.69534779917632],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_73fce1a24c6e4a5b84dc0da58f28209a = L.popup({"maxWidth": 500});
+
+        
+            var html_87fac45b193a4df4966a1422c9c3529b = $(`<div id="html_87fac45b193a4df4966a1422c9c3529b" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 11 - Temp 	 scattered clouds - Weather <hr width = 5>15:00:00 - Time 	 11 - Temp 	 few clouds - Weather <hr width = 5>18:00:00 - Time 	 11 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 11 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_73fce1a24c6e4a5b84dc0da58f28209a.setContent(html_87fac45b193a4df4966a1422c9c3529b);
+        
+
+        marker_7ab4c48d329148f9a6a486ed85c6274c.bindPopup(popup_73fce1a24c6e4a5b84dc0da58f28209a)
+        ;
+
+        
+    
+    
+            var marker_97675ad1d46940b9b85cd3b716fd3753 = L.marker(
+                [-86.50809609518599, -88.70252264847579],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_abd2cfcf145b4e738e9bfe1b5c3cd80a = L.popup({"maxWidth": 500});
+
+        
+            var html_f7953e878dcd477583e4e69214dc70d1 = $(`<div id="html_f7953e878dcd477583e4e69214dc70d1" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -45 - Temp 	 light snow - Weather <hr width = 5>15:00:00 - Time 	 -44 - Temp 	 light snow - Weather <hr width = 5>18:00:00 - Time 	 -43 - Temp 	 light snow - Weather <hr width = 5>21:00:00 - Time 	 -44 - Temp 	 light snow - Weather <hr width = 5></div>`)[0];
+            popup_abd2cfcf145b4e738e9bfe1b5c3cd80a.setContent(html_f7953e878dcd477583e4e69214dc70d1);
+        
+
+        marker_97675ad1d46940b9b85cd3b716fd3753.bindPopup(popup_abd2cfcf145b4e738e9bfe1b5c3cd80a)
+        ;
+
+        
+    
+    
+            var marker_14304ec0512d4644bfb6808c185320b2 = L.marker(
+                [29.32425514701859, -159.96598841760817],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_5bfa292b0e834f828f35f42bc15530ba = L.popup({"maxWidth": 500});
+
+        
+            var html_d9e763f14805434784e251525665eebb = $(`<div id="html_d9e763f14805434784e251525665eebb" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 9 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 9 - Temp 	 broken clouds - Weather <hr width = 5>18:00:00 - Time 	 9 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 9 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_5bfa292b0e834f828f35f42bc15530ba.setContent(html_d9e763f14805434784e251525665eebb);
+        
+
+        marker_14304ec0512d4644bfb6808c185320b2.bindPopup(popup_5bfa292b0e834f828f35f42bc15530ba)
+        ;
+
+        
+    
+    
+            var marker_720319029c4544b5bbc1fb20457a8f64 = L.marker(
+                [-45.65625031550341, -94.47016182572457],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_1d7c5a44c43341c48a6465f7906e6294 = L.popup({"maxWidth": 500});
+
+        
+            var html_f50d6b0de0e242d09fedb2e659f4f066 = $(`<div id="html_f50d6b0de0e242d09fedb2e659f4f066" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -6 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -6 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -5 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -5 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_1d7c5a44c43341c48a6465f7906e6294.setContent(html_f50d6b0de0e242d09fedb2e659f4f066);
+        
+
+        marker_720319029c4544b5bbc1fb20457a8f64.bindPopup(popup_1d7c5a44c43341c48a6465f7906e6294)
+        ;
+
+        
+    
+    
+            var marker_39dbc5a376a748028c96af134e2e3128 = L.marker(
+                [55.48053800692304, -2.9678088255824946],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_2099d1aca3a24fcb91777ccd88283c64 = L.popup({"maxWidth": 500});
+
+        
+            var html_126f4940ab974b15a28feb0c1d3ea5db = $(`<div id="html_126f4940ab974b15a28feb0c1d3ea5db" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -5 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 -4 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 -4 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -4 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_2099d1aca3a24fcb91777ccd88283c64.setContent(html_126f4940ab974b15a28feb0c1d3ea5db);
+        
+
+        marker_39dbc5a376a748028c96af134e2e3128.bindPopup(popup_2099d1aca3a24fcb91777ccd88283c64)
+        ;
+
+        
+    
+    
+            var marker_6b34bdf1fdef4765885738c2aa5e1047 = L.marker(
+                [-55.803495219447036, 38.11784614740594],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_ba8919ac601a4476aaa55030eeda7890 = L.popup({"maxWidth": 500});
+
+        
+            var html_579bd522fa644b67962968a88c83ec19 = $(`<div id="html_579bd522fa644b67962968a88c83ec19" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -14 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -14 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 -13 - Temp 	 moderate rain - Weather <hr width = 5>21:00:00 - Time 	 -14 - Temp 	 snow - Weather <hr width = 5></div>`)[0];
+            popup_ba8919ac601a4476aaa55030eeda7890.setContent(html_579bd522fa644b67962968a88c83ec19);
+        
+
+        marker_6b34bdf1fdef4765885738c2aa5e1047.bindPopup(popup_ba8919ac601a4476aaa55030eeda7890)
+        ;
+
+        
+    
+    
+            var marker_5683a4baff3a4df8aebf5d107ce38c4d = L.marker(
+                [-65.23776168117885, 124.29879848842899],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_0a8fb4d79d2545059a4b511cbf75614c = L.popup({"maxWidth": 500});
+
+        
+            var html_ac617b481c13476bb22f0f8de1863129 = $(`<div id="html_ac617b481c13476bb22f0f8de1863129" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -16 - Temp 	 light snow - Weather <hr width = 5>15:00:00 - Time 	 -20 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -26 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 -23 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_0a8fb4d79d2545059a4b511cbf75614c.setContent(html_ac617b481c13476bb22f0f8de1863129);
+        
+
+        marker_5683a4baff3a4df8aebf5d107ce38c4d.bindPopup(popup_0a8fb4d79d2545059a4b511cbf75614c)
+        ;
+
+        
+    
+    
+            var marker_b186c55a2101460abce99401c7ea71ea = L.marker(
+                [83.89663625092356, -25.44474738783697],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_2b3ef30babbb4728b692dcaeb4bc98ee = L.popup({"maxWidth": 500});
+
+        
+            var html_9b5895abf68f47189403a6c48aa64bf9 = $(`<div id="html_9b5895abf68f47189403a6c48aa64bf9" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -34 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -34 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -33 - Temp 	 broken clouds - Weather <hr width = 5>21:00:00 - Time 	 -34 - Temp 	 broken clouds - Weather <hr width = 5></div>`)[0];
+            popup_2b3ef30babbb4728b692dcaeb4bc98ee.setContent(html_9b5895abf68f47189403a6c48aa64bf9);
+        
+
+        marker_b186c55a2101460abce99401c7ea71ea.bindPopup(popup_2b3ef30babbb4728b692dcaeb4bc98ee)
+        ;
+
+        
+    
+    
+            var marker_596923c368b843449cb4dd632f3ffe5d = L.marker(
+                [-4.274775799463953, 98.22588217711046],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_2c183271a19c4811a3a296a7246d2883 = L.popup({"maxWidth": 500});
+
+        
+            var html_33e3c5d1fe7346b9b58cf7540983a36c = $(`<div id="html_33e3c5d1fe7346b9b58cf7540983a36c" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>15:00:00 - Time 	 14 - Temp 	 light rain - Weather <hr width = 5>18:00:00 - Time 	 13 - Temp 	 light rain - Weather <hr width = 5>21:00:00 - Time 	 13 - Temp 	 light rain - Weather <hr width = 5></div>`)[0];
+            popup_2c183271a19c4811a3a296a7246d2883.setContent(html_33e3c5d1fe7346b9b58cf7540983a36c);
+        
+
+        marker_596923c368b843449cb4dd632f3ffe5d.bindPopup(popup_2c183271a19c4811a3a296a7246d2883)
+        ;
+
+        
+    
+    
+            var marker_e40e7e8d90c348348bb452a99ec4aeda = L.marker(
+                [-25.45667093819425, 122.66373740288032],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_463c6ad7c53b4607beff46266ba02eff = L.popup({"maxWidth": 500});
+
+        
+            var html_f3e0547a15d741cfa824d6d3f74d83b5 = $(`<div id="html_f3e0547a15d741cfa824d6d3f74d83b5" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 14 - Temp 	 clear sky - Weather <hr width = 5>15:00:00 - Time 	 10 - Temp 	 clear sky - Weather <hr width = 5>18:00:00 - Time 	 5 - Temp 	 few clouds - Weather <hr width = 5>21:00:00 - Time 	 3 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_463c6ad7c53b4607beff46266ba02eff.setContent(html_f3e0547a15d741cfa824d6d3f74d83b5);
+        
+
+        marker_e40e7e8d90c348348bb452a99ec4aeda.bindPopup(popup_463c6ad7c53b4607beff46266ba02eff)
+        ;
+
+        
+    
+    
+            var marker_b1c121410b99417fa5381db7a9ebcab3 = L.marker(
+                [-87.98315629584836, -22.67725207984259],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_4d64f6f701b1418fb65745306ed6aff8 = L.popup({"maxWidth": 500});
+
+        
+            var html_bac7857fb1404f12b52f56d9f645eee6 = $(`<div id="html_bac7857fb1404f12b52f56d9f645eee6" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -62 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -64 - Temp 	 few clouds - Weather <hr width = 5>18:00:00 - Time 	 -65 - Temp 	 clear sky - Weather <hr width = 5>21:00:00 - Time 	 -64 - Temp 	 clear sky - Weather <hr width = 5></div>`)[0];
+            popup_4d64f6f701b1418fb65745306ed6aff8.setContent(html_bac7857fb1404f12b52f56d9f645eee6);
+        
+
+        marker_b1c121410b99417fa5381db7a9ebcab3.bindPopup(popup_4d64f6f701b1418fb65745306ed6aff8)
+        ;
+
+        
+    
+    
+            var marker_0aeecbed83a34233b453a77974c77c96 = L.marker(
+                [-6.07870568902635, -32.26970490113851],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_78a92b83473b4f3c994324c4298e1708 = L.popup({"maxWidth": 500});
+
+        
+            var html_3e161529cac144f8b446b4d55f521c6f = $(`<div id="html_3e161529cac144f8b446b4d55f521c6f" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 13 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 13 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 13 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 13 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_78a92b83473b4f3c994324c4298e1708.setContent(html_3e161529cac144f8b446b4d55f521c6f);
+        
+
+        marker_0aeecbed83a34233b453a77974c77c96.bindPopup(popup_78a92b83473b4f3c994324c4298e1708)
+        ;
+
+        
+    
+    
+            var marker_8a1da852301f447fbb2fce0afd2b4cfc = L.marker(
+                [63.1197800804903, 165.75734009158379],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_6b413814563545f197e84ea4896fceab = L.popup({"maxWidth": 500});
+
+        
+            var html_10ddeb35670b4e6aa24ea01ad670c3f2 = $(`<div id="html_10ddeb35670b4e6aa24ea01ad670c3f2" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -35 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 -36 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 -37 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 -37 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_6b413814563545f197e84ea4896fceab.setContent(html_10ddeb35670b4e6aa24ea01ad670c3f2);
+        
+
+        marker_8a1da852301f447fbb2fce0afd2b4cfc.bindPopup(popup_6b413814563545f197e84ea4896fceab)
+        ;
+
+        
+    
+    
+            var marker_989f6fe1506b4166992f02f26e32cb7d = L.marker(
+                [72.79075176665856, -162.70756923071167],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_8d7f83f478b34bd6a5560c73772420c5 = L.popup({"maxWidth": 500});
+
+        
+            var html_374e28d4fb5843f982dfdd913dcb2627 = $(`<div id="html_374e28d4fb5843f982dfdd913dcb2627" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -21 - Temp 	 overcast clouds - Weather <hr width = 5>15:00:00 - Time 	 -22 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -22 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -23 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_8d7f83f478b34bd6a5560c73772420c5.setContent(html_374e28d4fb5843f982dfdd913dcb2627);
+        
+
+        marker_989f6fe1506b4166992f02f26e32cb7d.bindPopup(popup_8d7f83f478b34bd6a5560c73772420c5)
+        ;
+
+        
+    
+    
+            var marker_e1d692a4c1cc48389a5ce452c6ef0340 = L.marker(
+                [31.110920400971594, -96.40221425942461],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_4340f06bd8a046d4abfd5749535fc30b = L.popup({"maxWidth": 500});
+
+        
+            var html_5be7e0434a1346999a21abfed85baf61 = $(`<div id="html_5be7e0434a1346999a21abfed85baf61" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 7 - Temp 	 few clouds - Weather <hr width = 5>15:00:00 - Time 	 9 - Temp 	 scattered clouds - Weather <hr width = 5>18:00:00 - Time 	 15 - Temp 	 scattered clouds - Weather <hr width = 5>21:00:00 - Time 	 16 - Temp 	 scattered clouds - Weather <hr width = 5></div>`)[0];
+            popup_4340f06bd8a046d4abfd5749535fc30b.setContent(html_5be7e0434a1346999a21abfed85baf61);
+        
+
+        marker_e1d692a4c1cc48389a5ce452c6ef0340.bindPopup(popup_4340f06bd8a046d4abfd5749535fc30b)
+        ;
+
+        
+    
+    
+            var marker_a64321847fe84d6e8135ddc2507b9a34 = L.marker(
+                [-47.47196254911026, -79.67689224758652],
+                {}
+            ).addTo(map_aceddee5c494494aa58fb60fcae7003b);
+        
+    
+        var popup_340f6c7e35b74b98b8377bceec04c7ab = L.popup({"maxWidth": 500});
+
+        
+            var html_9c67c8f7eb8b4308a10eb5a8e53fe3f4 = $(`<div id="html_9c67c8f7eb8b4308a10eb5a8e53fe3f4" style="width: 100.0%; height: 100.0%;"><div style="width:100%;height:20px;margin:50px 0;background-color:red;"></div><h1 style="text-align:center;color:blue;margin:20px auto;">Weather Map </h1>12:00:00 - Time 	 -8 - Temp 	 broken clouds - Weather <hr width = 5>15:00:00 - Time 	 -7 - Temp 	 overcast clouds - Weather <hr width = 5>18:00:00 - Time 	 -6 - Temp 	 overcast clouds - Weather <hr width = 5>21:00:00 - Time 	 -6 - Temp 	 overcast clouds - Weather <hr width = 5></div>`)[0];
+            popup_340f6c7e35b74b98b8377bceec04c7ab.setContent(html_9c67c8f7eb8b4308a10eb5a8e53fe3f4);
+        
+
+        marker_a64321847fe84d6e8135ddc2507b9a34.bindPopup(popup_340f6c7e35b74b98b8377bceec04c7ab)
+        ;
+
+        
+    
+</script>

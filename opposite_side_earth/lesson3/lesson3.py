@@ -23,14 +23,6 @@ geopoint  =  Geopoint(latitude = latitude , longitude = longitude)
 
 # we can add popup argument here if we wish using inherited arguments 
 
-lesson3 : Inheritance of class methods and arguments
-
- - Inherited methods of different classes to Geopoint
- - add_to method of adding elements to objects
- - added popup with weather details list converted to string
- - inherited variables and inherited methods
-
-
 
 popup = Popup(str(geopoint.get_weather()))
 
