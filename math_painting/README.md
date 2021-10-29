@@ -1,3 +1,9 @@
+** Before trying to have user input('') method implemented , check if every thing works fine with random values to generate the class and apply the methods for checking any errors
+
+ ----> Only implement  user interface after every thing else works fine
+
+
+
 Title : Math painter app
 Description : An app that requests user to provide with the size of a canvas and draw different types of rectangles. App will ask user to give the color of canvas (white or black) and users can either choose rectangle or square object to be drawn in the canvas.
  
