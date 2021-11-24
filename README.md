@@ -4,15 +4,13 @@
 
 
 
-### Course Records of advanced python course by Ardit sulce
-
-####    Different projects and challenges done throughout the course
+# Different projects and challenges done throughout the course
 
     Opposite side earth CLI
     Flatmates bill CLI
     Math Painter using numpy array and matrix data CLI
     Search Images from WIKI - KIVY library GUI
-    
+
 
 
 
