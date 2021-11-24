@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill form</title>
+</head>
+<body>
+
+    <h1 class="h1" style="text-align: center;display: block;">Flatmates Bill App</h1>
+
+
+    <form action="/results" method="post">
+       
+        {{billform.amount.label}}  {{billform.amount}}
+        {{billform.period.label}}  {{billform.period}}
+
+        {{billform.name1.label}}  {{billform.name1}}
+        {{billform.days1.label}}  {{billform.days1}}
+
+        {{billform.name2.label}}  {{billform.name2}}
+        {{billform.days2.label}}  {{billform.days2}}
+
+        {{billform.submit}}  
+
+       
+
+    
+    </form>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        html{
+            font-size: 10px;
+        }
+    
+        h1{
+            font-size: 4rem;
+            margin: 2rem 0;
+        }
+
+        form{
+            width: 90%;
+            margin: 2rem 5%;
+        }
+
+        input{
+            padding: 1rem 2rem;
+            width: 80%;
+            margin: 4rem 10%;
+            display: block;
+        }
+        
+    
+        a{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline;
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 1.5rem 3rem;
+    
+        }
+    
+        a:hover{
+            transform: scale(1.1) translateX(-50%);
+        }
+    
+    </style>  
+
+
+    
+</body>
+</html>

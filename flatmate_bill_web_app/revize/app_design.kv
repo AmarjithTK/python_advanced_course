@@ -1,0 +1,18 @@
+<FirstScreen>:
+    GridLayout:
+        cols: 1
+        spacing:15
+        padding:10
+        Button:
+            text:'This is a beautiful button'
+            on_press:root.send_stats()
+        'Hello'
+        Image:
+            source:'img/first_cry.png'
+        
+
+
+<RootWidget>:
+    FirstScreen:
+        id:first_screen            
+
