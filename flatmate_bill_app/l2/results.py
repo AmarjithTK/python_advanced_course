@@ -75,5 +75,12 @@ class Filesharer:
         self.filename =filename
     def upload(self):
         client = Client('AdjLC2cSOSxGpuW3jMLefz')
-        filelink = client.upload(filepath=f'resources/{self.filename}')
+        # filelink = client.upload(filepath=f'resources/{self.filename}')
+        filelink = client.upload(filepath=self.filename)
+
         print(filelink.url)
+
+
+
+file = Filesharer('debug.css')
+file.upload()
