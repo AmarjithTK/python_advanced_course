@@ -1,0 +1,27 @@
+
+
+api reference:
+
+
+
+https://api-url/get_all_data+apikey="";
+
+
+if(apikey== 'valid key'){
+
+    if(api_request_valid)
+
+    return res.send({
+
+    })
+
+
+}
+
+else{
+
+    return res.send({
+        errormessage:'Incorrect api key',
+        statuscode:411
+    })
+}
