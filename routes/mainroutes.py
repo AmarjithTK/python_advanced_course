@@ -1,7 +1,25 @@
 
 from flask import request,redirect,render_template
 
-@osmium.route('/',methods=['GET','POST'])
+from flask import Blueprint
+
+
+
+
+userdata = {
+
+    "name":'startship',
+    "status":'running',
+    "uptime":50.0,
+    "os":'Ubuntu Mate',
+    "hostname":'Flatter',   
+
+}
+
+
+osmiumRoutes = Blueprint('osmiumRoutes',__name__)
+
+@osmiumRoutes.route('/',methods=['GET','POST'])
 def LoginPage():
     if(request.method == 'POST'):
         # creds = {username:request.form['username'],password:request.form['password']}
@@ -14,7 +32,7 @@ def LoginPage():
         return render_template("login.html")
 
 
-@osmium.route('/dashboard',methods=['GET'])
+@osmiumRoutes.route('/dashboard',methods=['GET'])
 def DashPage():
     print('enter getresult', flush=True)
-    return render_template('index.html',title=homeTitle)
+    return render_template('index.html',title="hello world",userdata = userdata)

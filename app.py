@@ -1,12 +1,15 @@
 
-from flask import Flask,render_template,request,redirect,url_for
+from flask import Flask
+from routes.mainroutes import osmiumRoutes
 # import os
 
 
 # import logging
 # logging.basicConfig(level=logging.DEBUG)
 
+osmium = Flask(__name__)
 
-from routes import mainroutes
+osmium.register_blueprint(osmiumRoutes)
+
 
 osmium.run(debug=True,)

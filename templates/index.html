@@ -60,32 +60,35 @@
     <section class="section pt-5 cards-section">
         <div class="container">
             <div class="columns is-multiline">
+
+
+                {% for i in range(0,8) %}
                 <div class="column is-4">
                     
                     <div class="box mb-1 stats-box has-background-white">
-                        <h3 class="name">starship</h3>
+                        <h3 class="name">{{userdata['name']}}</h3>
 
                     </div>
                   
                     <div class="box m-0 has-text-primary stats-box">
                         <h3 class="name1">Status</h3>
-                        <h3 class="status has-text-weight-bold is-size-6">running</h3>
+                        <h3 class="status has-text-weight-bold is-size-6">{{userdata['status']}}</h3>
                     </div>
 
                     <div class="box mb-0 stats-box">
                         <h3 class="name">uptime</h3>
-                        <h3 class="status">50minutes</h3>
+                        <h3 class="status">{{userdata['uptime']}} minutes</h3>
                     </div>
                    
 
                     <div class="box mb-0 stats-box">
                         <h3 class="name">OS</h3>
-                        <h3 class="status">Arch linux</h3>
+                        <h3 class="status">{{userdata['os']}}</h3>
                     </div>
 
                     <div class="box mb-0 stats-box">
                         <h3 class="name">Host name</h3>
-                        <h3 class="status">superheavy</h3>
+                        <h3 class="status">{{userdata['hostname']}}</h3>
                     </div>
 
 
@@ -93,123 +96,15 @@
 
                     <div class="box mb-0 stats-box center">
                         <h3 class="name">Shutdown this</h3>
+                        
                             <button onclick="printBoi()" name="turn-off" type="submit" class="button is-danger is-light btn-turn-off" >now</button>
                 
                     </div>
 
                 </div>
 
-                <div class="column is-4">
-                    <div class="box mb-1 stats-box has-background-warning">
-                        <h3 class="name">starship</h3>
-
-                    </div>
-                    <div class="box m-0 has-text-danger stats-box">
-                        <h3 class="name1">Status</h3>
-                        <h3 class="status has-text-weight-bold is-size-6 is-light">down</h3>
-                    </div>
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">uptime</h3>
-                        <h3 class="status">50minutes</h3>
-                    </div>
-                   
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">OS</h3>
-                        <h3 class="status">Arch linux</h3>
-                    </div>
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">Host name</h3>
-                        <h3 class="status">superheavy</h3>
-                    </div>
-
-
-                 
-
-                    <div class="box mb-0 stats-box center">
-                        <h3 class="name">Shutdown</h3>
-                        <button class="button is-danger btn-turn-off">not now</button>
-
-                    </div>
-
-                </div>
-
-
-                <div class="column is-4">
-                    <div class="box mb-1 stats-box has-background-warning">
-                        <h3 class="name">starship</h3>
-
-                    </div>
-                    <div class="box m-0 has-text-primary stats-box">
-                        <h3 class="name1">Status</h3>
-                        <h3 class="status has-text-weight-bold is-size-6">running</h3>
-                    </div>
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">uptime</h3>
-                        <h3 class="status">50minutes</h3>
-                    </div>
-                   
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">OS</h3>
-                        <h3 class="status">Arch linux</h3>
-                    </div>
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">Host name</h3>
-                        <h3 class="status">superheavy</h3>
-                    </div>
-
-
-                 
-
-                    <div class="box mb-0 stats-box center">
-                        <h3 class="name">Shutdown</h3>
-                        <button class="button is-danger btn-turn-off">now</button>
-
-                    </div>
-
-                </div>
-
-
-                <div class="column is-4">
-                    <div class="box mb-1 stats-box has-background-warning">
-                        <h3 class="name">starship</h3>
-
-                    </div>
-                    <div class="box m-0 has-text-primary stats-box">
-                        <h3 class="name1">Status</h3>
-                        <h3 class="status has-text-weight-bold is-size-6">running</h3>
-                    </div>
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">uptime</h3>
-                        <h3 class="status">50minutes</h3>
-                    </div>
-                   
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">OS</h3>
-                        <h3 class="status">Arch linux</h3>
-                    </div>
-
-                    <div class="box mb-0 stats-box">
-                        <h3 class="name">Host name</h3>
-                        <h3 class="status">superheavy</h3>
-                    </div>
-
-
-                 
-
-                    <div class="box mb-0 stats-box center">
-                        <h3 class="name">Shutdown</h3>
-                        <button class="button is-danger btn-turn-off">now</button>
-
-                    </div>
-
+                {% endfor %}
+                
                 </div>
 
 
