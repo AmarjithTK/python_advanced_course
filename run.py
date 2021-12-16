@@ -2,6 +2,6 @@ from flaskmium import osmium
 
 
 if __name__ == "__main__":
-    osmium.secret_key = '4fssg'
+    osmium.secret_key = '4sgswadfsg'
 
-    osmium.run(debug=True,port=5000)
+    osmium.run(debug=True,port=4500)

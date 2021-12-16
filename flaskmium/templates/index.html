@@ -94,8 +94,14 @@
                  
 
                     <div class="box mb-0 stats-box center">
+                        <h3 class="name">Action to take</h3>
 
-                            <button onclick="printBoi()" name="turn-off" type="submit" class="button is-danger is-fullwidth is-light btn-turn-off" >Shutdown Now</button>
+                        <form action="/shutdown" method="POST">
+
+                            
+                            <button data-username= {{i}} name="turn-off" type="submit" class="button is-danger  is-light btn-turn-off" >Shutdown Now</button>
+
+                        </form>
                 
                     </div>
 
@@ -143,7 +149,12 @@
                 </div>
                 <div class="level-item has-text-centered">
                   <div>
-                    <button class="button is-primary is-light">Logout &RightArrow;</button>
+
+                    <form action="/logout" method="POST">
+                    
+                        <button class="button is-primary is-light" type="submit">Logout &RightArrow;</button>
+
+                    </form>
 
                   </div>
                 </div>
@@ -156,6 +167,10 @@
 
 
     <script>
+
+        // document.querySelector('form').addEventListener('submit',(e)=>{
+        //     e.preventDefault()
+        // })
 
         // const turnOFF = document.querySelectorAll('.btn-turn-off')
         // turnOFF.addEventListener('click', (e) => {
