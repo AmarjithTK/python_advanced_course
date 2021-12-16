@@ -1,0 +1,48 @@
+Title : Osmium PC Control FrontEnd
+Author : AmarjithTK
+Description : 
+
+
+Basic login password
+
+    set a username,password 
+    give an api request with username password 
+    if api request was success
+    set cookie loggedInValid = true 
+    show the dashboard
+
+    with an interval,keep requesting for dashboard data
+    api request with delete parameter
+
+
+
+App logins user with firebase auth
+
+    - username
+    - password
+
+If logged in, then no problem !
+
+Moves to Osmium main screen
+
+    User Picks the device to turn off
+    clicks button
+    sends post request
+
+
+Firebase picks up the request
+
+    if(pcStatus == true) {
+        pcStatus = false
+    }
+
+After 30 seconds , project displays the pcStatus value = false
+
+
+Firebase listener for pcStatus , set true by PC on restart
+
+    if(pcStatus == true){
+        render(statusIndicator,upTime)
+    }
+
+
