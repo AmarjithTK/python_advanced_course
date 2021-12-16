@@ -14,7 +14,7 @@ login_manager = LoginManager()
 login_manager.init_app(osmium)
 
 
+from flaskmium.modules import pageroute
+from flaskmium.modules import requestroute
+from flaskmium.modules import failroute
 
-
-from flaskmium.models import usermodel
-from flaskmium.models import routemodel
