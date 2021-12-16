@@ -55,3 +55,10 @@ def nopage(e):
 @osmium.errorhandler(401)
 def unauth(e):
     return render_template('exception.html',heading='Unauthorised request')
+
+
+@osmium.route('/shutdown',methods=['POST'])
+def getattribute():
+    data = request.form.get('data-username')
+    print(f"data id is {data}",flush=True)
+    return redirect('/dashboard')    

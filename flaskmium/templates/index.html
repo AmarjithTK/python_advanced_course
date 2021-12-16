@@ -99,8 +99,8 @@
                         <form action="/shutdown" method="POST">
 
                             
-                            <button data-username= {{i}} name="turn-off" type="submit" class="button is-danger  is-light btn-turn-off" >Shutdown Now</button>
-
+                            <button name="shutdownbtn" data-username= {{i}} name="turn-off" type="submit" class="button is-danger  is-light btn-turn-off" >Shutdown Now</button>
+                            <input class="is-hidden" type="text" name="data-username" value="{{i}}andnda" >
                         </form>
                 
                     </div>
