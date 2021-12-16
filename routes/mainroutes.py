@@ -8,7 +8,9 @@ from flask import Blueprint
 
 userdata = {
 
-    "name":'startship',
+
+
+    "name":'Startship',
     "status":'running',
     "uptime":50.0,
     "os":'Ubuntu Mate',
@@ -27,6 +29,8 @@ def LoginPage():
         password = request.form.get('password')
         if user == 'amar@gmail.com' and password == '123456':
             return redirect('/dashboard',code=302)
+            # return render_template('index.html',title="hello world",userdata = userdata)
+
 
     elif(request.method == 'GET'):
         return render_template("login.html")

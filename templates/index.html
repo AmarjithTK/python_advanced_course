@@ -42,9 +42,8 @@
 
    
 
-        <div class="container mt-5 mb-0 pb-0 centered">
-            
-                <p class="title is-2">Osmium PC control</p>
+        <div class="container mt-5 mb-0 pb-0">
+                <p class="title is-2 has-text-centered">Osmium PC control</p>
     
         </div>
 
@@ -57,16 +56,16 @@
 
 
 
-    <section class="section pt-5 cards-section">
+    <section class="section pt-8 cards-section">
         <div class="container">
             <div class="columns is-multiline">
 
 
                 {% for i in range(0,8) %}
-                <div class="column is-4">
+                <div class="column is-4 m-4">
                     
-                    <div class="box mb-1 stats-box has-background-white">
-                        <h3 class="name">{{userdata['name']}}</h3>
+                    <div class="box mb-1 stats-box has-background-white-ter	">
+                        <h3 class="name is-size-5 m-auto">{{userdata['name']}}</h3>
 
                     </div>
                   
@@ -95,9 +94,8 @@
                  
 
                     <div class="box mb-0 stats-box center">
-                        <h3 class="name">Shutdown this</h3>
-                        
-                            <button onclick="printBoi()" name="turn-off" type="submit" class="button is-danger is-light btn-turn-off" >now</button>
+
+                            <button onclick="printBoi()" name="turn-off" type="submit" class="button is-danger is-fullwidth is-light btn-turn-off" >Shutdown Now</button>
                 
                     </div>
 
@@ -128,13 +126,28 @@
 
  
         <footer class="section has-background-light">
-            <div class="container has-text-centered">
+            <!-- <div class="container has-text-centered">
               <p>
                 <strong>Osmium</strong> by <a href="https://jgthms.com">Amarjith TK</a>. The source code is licensed
                 <a href="http://opensource.org/licenses/mit-license.php">Here</a>. The website content
                 is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                <button class="button is-primary is-light">Logout &RightArrow;</button>
+
               </p>
-            </div>
+            </div> -->
+            <nav class="level">
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">Made with love by Amarjith TK , source code available <a href="http://">here</a> free to use for any projects </p>
+                  </div>
+                </div>
+                <div class="level-item has-text-centered">
+                  <div>
+                    <button class="button is-primary is-light">Logout &RightArrow;</button>
+
+                  </div>
+                </div>
+              </nav>
           </footer>
   
 
